@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<%# <nav class="navbar navbar-dark bg-dark"> %>
   <div class="container-fluid">
     <%= link_to 'Friend App', root_path, class: 'navbar-brand' %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,7 +11,16 @@
           <%= link_to 'Home', root_path, class: 'nav-link active' %>
         </li>
         <li class="nav-item">
-          <%= link_to 'About Us', home_about_path, class: 'nav-link' %>
+          <%= link_to 'About Us', home_about_path, class: 'nav-link active' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Add Friend', new_friend_path, class: 'nav-link active' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Friend', friends_path, class: 'nav-link active' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Google', "http://www.google.com", class: 'nav-link active' %>
         </li>
       </ul>
       <form class="d-flex" role="search">
